@@ -6,7 +6,7 @@ class Matrix extends Component {
   constructor(props) {
     super(props)
     this.state ={
-      values: props.values.length ? props.values : [...Array(10).fill(Array(10).fill('#F00'))] // if props.values is empty populate with generated array of #F00 (use Array.fill)
+      values: props.values.length ? props.values : [...Array(10).fill(Array(10).fill('#F00'))]
     }
   }
  genRow = (vals) => (
@@ -26,5 +26,9 @@ class Matrix extends Component {
     )
   }
   
+}
+
+Matrix.defaultProps ={
+ values: [...Array(10).fill(Array(10).fill('#F00'))] 
 }
 export default Matrix
