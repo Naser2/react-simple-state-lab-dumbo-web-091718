@@ -44,7 +44,6 @@ constructor(props) {
   // ...define initial state with a key of 'color' set to the 'value' prop
 }
 ```
-
 2. `Cell` should render a single `<div>` with a className of `cell`
 3. In render, the cell should set the background color in-line for the `<div>` by adding the following attribute: `style={{backgroundColor: '#FFF'}}` ('#FFF' is just used as an example value here - the value should be state's color)
 4. Create a click listener which, when activated, updates the state to the following hex value: '#333'
